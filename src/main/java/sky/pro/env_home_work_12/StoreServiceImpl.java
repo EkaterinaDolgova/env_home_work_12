@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@Scope("session")
+//@Scope("session")
 public class StoreServiceImpl implements StoreService {
 
     @Autowired
