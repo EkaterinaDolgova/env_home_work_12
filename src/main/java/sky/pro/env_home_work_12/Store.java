@@ -1,13 +1,20 @@
 package sky.pro.env_home_work_12;
 
-import java.util.ArrayList;
+import org.springframework.context.annotation.Scope;
+
 import java.util.List;
 
+@Scope("session")
 public class Store {
-    private final List<Integer> items;
+    private  List<Integer> items;
 
-    public Store() {
-        this.items = new ArrayList<>();
+    public Store(List<Integer> items) {
+        this.items = items;
     }
-
+    public List<Integer> getItems() {
+        return items;
+    }
+    public void setItems(List<Integer> items) {
+        this.items = items;
+    }
 }
